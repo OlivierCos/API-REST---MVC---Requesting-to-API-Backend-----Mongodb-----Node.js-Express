@@ -5,7 +5,12 @@ const sauceRoutes = require('./routes/sauce.js');
 const app = express();
 const userRoutes = require('./routes/users.js');
 
-mongoose.connect('mongodb+srv://olivierco1:logicbobby@cluster0.5jrov.mongodb.net/Projet6?retryWrites=true&w=majority',
+
+// const login = process.env.MONGO_USER;
+// const password = process.env.MONGO_PASSWORD;
+// ${login}:${password}
+
+mongoose.connect(`mongodb+srv://olivierco1:logicbobby@cluster0.5jrov.mongodb.net/Projet6?retryWrites=true&w=majority`,
   { useNewUrlParser: true,
     useUnifiedTopology: true })
   .then(() => console.log('Connexion à MongoDB réussie !'))
