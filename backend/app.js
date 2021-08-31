@@ -1,6 +1,6 @@
 const express = require('express');
 const mongoose = require('mongoose');
-
+const sauceRoutes = require('./routes/sauce.js');
 const app = express();
 
 mongoose.connect('mongodb+srv://olivierco1:logicbobby@cluster0.5jrov.mongodb.net/Projet6?retryWrites=true&w=majority',
@@ -15,8 +15,11 @@ app.use((req, res, next) => {
     res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, PATCH, OPTIONS');
     next();
   });
+//remplace body-parser   
 app.use(express.urlencoded({extended: true})); 
 app.use(express.json());
+
+app.use('/api/sauces', sauceRoutes);
 
 
 module.exports = app;
