@@ -10,7 +10,7 @@ const userRoutes = require('./routes/users.js');
 // const password = process.env.MONGO_PASSWORD;
 // ${login}:${password}
 
-mongoose.connect(`mongodb+srv://olivierco1:logicbobby@cluster0.5jrov.mongodb.net/Projet6?retryWrites=true&w=majority`,
+mongoose.connect('mongodb+srv://olivierco1:logicbobby@cluster0.5jrov.mongodb.net/Projet6?retryWrites=true&w=majority',
   { useNewUrlParser: true,
     useUnifiedTopology: true })
   .then(() => console.log('Connexion à MongoDB réussie !'))
