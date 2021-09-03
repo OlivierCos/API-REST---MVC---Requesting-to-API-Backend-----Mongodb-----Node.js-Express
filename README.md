@@ -11,7 +11,7 @@ L'entreprise souhaite créer une application web dans laquelle les utilisateurs 
 1. Clonez le repository
 2. Ouvrez un terminal (Linux/Mac) de commande/PowerShell
 (Windows)
-3. Exécutez npm install à partir du répertoire Web-Developer-P6 du dossier frontend
+3. Exécutez npm install à partir du dossier frontend
 4. Exécutez npm start
 5. Dans un autre terminal, exécutez le back-end avec node server (ou http://localhost:3000?)
 

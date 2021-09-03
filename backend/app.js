@@ -6,11 +6,11 @@ const app = express();
 const userRoutes = require('./routes/users.js');
 
 
-// const login = process.env.MONGO_USER;
-// const password = process.env.MONGO_PASSWORD;
-// ${login}:${password}
+const login = process.env.MONGO_USER;
+const password = process.env.MONGO_PASSWORD;
 
-mongoose.connect('mongodb+srv://olivierco1:logicbobby@cluster0.5jrov.mongodb.net/Projet6?retryWrites=true&w=majority',
+
+mongoose.connect(`mongodb+srv://${login}:${password}@cluster0.5jrov.mongodb.net/Projet6?retryWrites=true&w=majority`,
   { useNewUrlParser: true,
     useUnifiedTopology: true })
   .then(() => console.log('Connexion à MongoDB réussie !'))
