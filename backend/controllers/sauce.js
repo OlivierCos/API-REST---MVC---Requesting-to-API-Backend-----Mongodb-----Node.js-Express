@@ -15,7 +15,7 @@ exports.createSauce = (req, res, next) => {
 
 exports.modifySauce = (req, res, next) => {
     let sauceObject = {};
-    req.file ? ( // Opérateur ternaire équivalent à if() {} else {} => condition ? Instruction si vrai : Instruction si faux 
+    req.file ? ( // Opérateur ternaire équivalent à if() do() else() => condition ? Instruction si vrai : Instruction si faux 
         Sauce.findOne({ _id: req.params.id})
           .then((sauce) => {
             const filename = sauce.imageUrl.split('/images/')[1] // On supprime l'ancienne image du serveur
@@ -59,33 +59,29 @@ exports.getAllSauce = (req, res, next) => {
   };
 
 exports.likeSauce = (req, res, next) => {
-  // Pour la route READ = Ajout/suppression d'un like / dislike à une sauce
-  // Like présent dans le body
   let like = req.body.like
-  // On prend le userID
   let userId = req.body.userId
-  // On prend l'id de la sauce
   let sauceId = req.params.id
 
-  if (like === 1) { // Si il s'agit d'un like On push l'utilisateur et on incrémente le compteur de 1
+  if (like === 1) { 
     Sauce.updateOne({_id: sauceId}, {$push: {usersLiked: userId}, $inc: { likes: +1}})
       .then(() => res.status(200).json({message: 'j\'aime ajouté !'}))
       .catch((error) => res.status(400).json({error}))
   }
-  if (like === -1) {// S'il s'agit d'un dislike
+  if (like === -1) {
     Sauce.updateOne({_id: sauceId}, {$push: {usersDisliked: userId}, $inc: {dislikes: +1}})
       .then(() => res.status(200).json({message: 'Dislike ajouté !'}))
       .catch((error) => res.status(400).json({error}))
   }
-  if (like === 0) { // Si il s'agit d'annuler un like ou un dislike
+  if (like === 0) { 
     Sauce.findOne({_id: sauceId})
       .then((sauce) => {
-        if (sauce.usersLiked.includes(userId)) { // Si il s'agit d'annuler un like
+        if (sauce.usersLiked.includes(userId)) { 
           Sauce.updateOne({_id: sauceId}, {$pull: {usersLiked: userId}, $inc: {likes: -1}})
             .then(() => res.status(200).json({message: 'Like retiré !'}))
             .catch((error) => res.status(400).json({error}))
         }
-        if (sauce.usersDisliked.includes(userId)) { // Si il s'agit d'annuler un dislike
+        if (sauce.usersDisliked.includes(userId)) { 
           Sauce.updateOne({_id: sauceId}, {$pull: {usersDisliked: userId}, $inc: {dislikes: -1}})
             .then(() => res.status(200).json({message: 'Dislike retiré !'}))
             .catch((error) => res.status(400).json({error}))

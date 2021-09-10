@@ -1,3 +1,4 @@
+// Création d'un schema mangoose pour que les données de la base MongoDB correspondent à celles précisées dans le schema Model des sauces
 const mongoose = require('mongoose');
 
 const sauceSchema = mongoose.Schema({
@@ -14,4 +15,4 @@ const sauceSchema = mongoose.Schema({
   usersDisliked : { type: Array, required: true, default: [] }
 });
 
-module.exports = mongoose.model('Sauce', sauceSchema); 
+module.exports = mongoose.model('Sauce', sauceSchema); // On exporte ce shéma de données qu'on va pouvoir utiliser pour intéragir avec l'application

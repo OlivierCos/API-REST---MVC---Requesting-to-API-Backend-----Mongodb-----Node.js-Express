@@ -1,9 +1,12 @@
-const express = require('express');
-const router = express.Router();
-const auth = require('../middleware/auth.js');
-const multer = require('../middleware/multer-config.js');
+// Fonctions qui vont s'appliquer aux différentes routes pour les sauces
 
-const sauceCtrl = require('../controllers/sauce.js');
+const express = require('express');
+const router = express.Router(); // Appel du routeur avec la méthode mise à disposition par Express
+const auth = require('../middleware/auth.js'); // Middleware pour sécuriser les routes via le plugin JsonWebToken
+const multer = require('../middleware/multer-config.js'); // Middleware pour la gestion des images
+
+
+const sauceCtrl = require('../controllers/sauce.js'); // On associe les fonctions aux différentes routes en important le controller
 
 router.get('/', auth, sauceCtrl.getAllSauce);
 router.post('/', auth, multer, sauceCtrl.createSauce);

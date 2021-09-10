@@ -1,6 +1,7 @@
-const http = require('http');
-const app = require('./app');
+const http = require('http'); // Import du package pour l'écoute des requêtes http
+const app = require('./app'); // Import du fichier app.js pour utiliser l'application sur le serveur
 
+// normalizePort : Pour renvoyer un port valide, sous forme d'un numéro ou d'une chaîne 
 const normalizePort = val => {
   const port = parseInt(val, 10);
 
@@ -15,6 +16,7 @@ const normalizePort = val => {
 const port = normalizePort(process.env.PORT || '3000');
 app.set('port', port);
 
+// errorHandler : Pour rechercher et gérer les différentes erreurs
 const errorHandler = error => {
   if (error.syscall !== 'listen') {
     throw error;
@@ -35,8 +37,9 @@ const errorHandler = error => {
   }
 };
 
+// Créer un serveur via express en utilisant app
+// création d'une constante pour les appels serveur (requêtes et réponses)
 const server = http.createServer(app);
-
 server.on('error', errorHandler);
 server.on('listening', () => {
   const address = server.address();
