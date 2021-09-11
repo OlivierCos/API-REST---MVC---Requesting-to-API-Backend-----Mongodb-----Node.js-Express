@@ -9,8 +9,7 @@ L'entreprise souhaite créer une application web dans laquelle les utilisateurs 
 ## Development server
 
 1. Clonez le repository
-2. Ouvrez un terminal (Linux/Mac) de commande/PowerShell
-(Windows)
+2. Ouvrez un terminal de commande
 3. Exécutez à partir du dossier frontend npm install 
 4. Puis exécutez npm start
 5. Dans un autre terminal, exécutez le back-end avec la commande npm install 
