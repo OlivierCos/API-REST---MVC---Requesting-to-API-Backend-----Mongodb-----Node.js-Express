@@ -21,6 +21,6 @@ serveur front-end sans avoir recours à npm install.
 
 Il vous faudra rajouter un dossier 'images' dans le dossier backend qui permettra d'enregistrer l'image d'une sauce.
 
-## Sécurité pour mongoDB
+## Connexion à MongoDB
 
 Dans le fichier app.js et la fonction mongoose.connect, l'url de connexion à mongoDB n'est pas directement affiché. Je l'ai rajouté dans une variable d'environnement pour une question de sécurité. L'url se trouve dans le fichier .env.
