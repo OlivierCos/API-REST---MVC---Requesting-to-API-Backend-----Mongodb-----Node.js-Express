@@ -24,3 +24,8 @@ Il vous faudra rajouter un dossier 'images' dans le dossier backend qui permettr
 ## Connexion à MongoDB
 
 Dans le fichier app.js et la fonction mongoose.connect, l'url de connexion à mongoDB n'est pas directement affiché. Je l'ai rajouté dans une variable d'environnement pour une question de sécurité. L'url se trouve dans le fichier .env.
+
+## Test 
+Valeurs test des variables d'environnement à rajouter dans le fichier .env.exemple
+TOKEN = RANDOM_TOKEN_SECRET
+MONGO = mongodb+srv://olivierco1:logicbobby@cluster0.5jrov.mongodb.net/Projet6?retryWrites=true&w=majority

@@ -12,7 +12,7 @@ const app = express(); //  L'application utilise le framework expres
 
 
 //implémentation des schémas de données strictes pour rendre notre application plus robuste
-mongoose.connect(process.env.MONGO,
+mongoose.connect(process.env.exemple.MONGO,
   { useNewUrlParser: true,
     useUnifiedTopology: true })
   .then(() => console.log('Connexion à MongoDB réussie !'))
