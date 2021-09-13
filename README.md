@@ -27,5 +27,7 @@ Dans le fichier app.js et la fonction mongoose.connect, l'url de connexion à mo
 
 ## Test 
 Valeurs des variables d'environnement à rajouter dans un fichier .env à créer dans le backend à l'exemple du fichier .env.exemple
+
 TOKEN = RANDOM_TOKEN_SECRET
+
 MONGO = mongodb+srv://olivierco1:logicbobby@cluster0.5jrov.mongodb.net/Projet6?retryWrites=true&w=majority
