@@ -70,7 +70,7 @@ MONGO = mongodb+srv://olivierco1:logicbobby@cluster0.5jrov.mongodb.net/Projet6?r
 
 Frontend réalisé par une tierce personne
 
-__1) Page répertoriant les sauces  &nbsp;   &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;   &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;   &nbsp;   2) Page d'info d'une sauce ajoutée par l'utilisateur__
+__1) Page répertoriant les sauces  &nbsp;   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;   &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;   &nbsp;   2) Page d'info d'une sauce ajoutée par l'utilisateur__
 
 
-<img alt="Page répertoriant les sauces" width=45% src="../AllSauces.png"></img> <img alt="Page d'info d'une sauce ajoutée par l'utilisateur" width=45% src="../OneSauce.png"></img>
+<img alt="Page répertoriant les sauces" width=45% src="AllSauces.png"></img> <img alt="Page d'info d'une sauce ajoutée par l'utilisateur" width=45% src="OneSauce.png"></img>
