@@ -1,7 +1,5 @@
 # PIIQUANTE
 
-Requesting to API/Backend API REST
-
 ### Application web dans laquelle les utilisateurs ajoutent leurs sauces préférées et peuvent liker ou disliker les différentes sauces proposées
 
  &nbsp; 
@@ -68,7 +66,7 @@ MONGO = mongodb+srv://olivierco1:logicbobby@cluster0.5jrov.mongodb.net/Projet6?r
 
  &nbsp; 
 
-Frontend réalisé par une tierce personne
+Frontend réalisé par une tierce personne :
 
 __1) Page répertoriant les sauces  &nbsp;   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;   &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;   &nbsp;   2) Page d'info d'une sauce ajoutée par l'utilisateur__
 
