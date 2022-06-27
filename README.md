@@ -2,13 +2,14 @@
 
 Requesting to API/Backend API REST
 
-Création d'une application web dans laquelle les utilisateurs peuvent ajouter leurs sauces préférées et liker ou disliker les différentes sauces proposées.
+## Création d'une application web dans laquelle les utilisateurs peuvent ajouter leurs sauces préférées et liker ou disliker les différentes sauces proposées
 
-Gérer des événements JavaScript
-Interagir avec un web service avec JavaScript
-Valider des données issues de sources externes
-
-MVP
+🛠️ Gérer des événements JavaScript
+🛠️ Interagir avec un service web (API) en JavaScript
+🛠️ Valider des données issues de sources externes
+🛠️ Organisation du backend en MVP (Route-Model-Controller) (API REST)
+🛠️ Sécurisation des données (bcrypt/middleware)
+🛠️ Création et ancrage à une base de données (Mongodb), ajout/modification/suppression de données (images, mots de passe cryptés,...) possibles pour l'utilisateur
 
 | Langages | Outils | Plugin |
 | :---: | :---: | :---: |
