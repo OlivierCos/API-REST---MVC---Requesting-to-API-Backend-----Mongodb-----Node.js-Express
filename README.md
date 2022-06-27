@@ -2,9 +2,9 @@
 
 Requesting to API/Backend API REST
 
-## Création d'une application web dans laquelle les utilisateurs peuvent ajouter leurs sauces préférées et liker ou disliker les différentes sauces proposées
- &nbsp; 
+### Application web dans laquelle les utilisateurs ajoutent leurs sauces préférées et liker ou disliker les différentes sauces proposées
 
+ &nbsp; 
 
 🛠️ Gérer des événements JavaScript
 
