@@ -1,10 +1,22 @@
 # PIIQUANTE
 
-Projet réalisé dans le cadre du projet 6 de la formation d'OpenClass Rooms.
+Requesting to API/Backend API REST
 
-Contexte : 
-L'entreprise souhaite créer une application web dans laquelle les utilisateurs peuvent ajouter leurs sauces préférées et liker ou disliker les différentes sauces proposées.
+Création d'une application web dans laquelle les utilisateurs peuvent ajouter leurs sauces préférées et liker ou disliker les différentes sauces proposées.
 
+Gérer des événements JavaScript
+Interagir avec un web service avec JavaScript
+Valider des données issues de sources externes
+
+MVP
+
+| Langages | Outils | Plugin |
+| :---: | :---: | :---: |
+| HTML5 | Node.js/NPM (Node Package Manager) | bcrypt/jsonwebtoken |
+| CSS3 | Git/GitHub | dotenv/helmet/multer |
+| Java-script | Visual Studio Code | express/mongoose |
+
+Design (Frontend) non réalisé par mes soins
 
 ## Development server
 
@@ -19,7 +31,7 @@ Si vous utilisez VSCode, utilisez l'extension LiveShare pour faire fonctionner l
 serveur front-end sans avoir recours à npm install.
 
 
-Il vous faudra rajouter un dossier 'images' dans le dossier backend qui permettra d'enregistrer l'image d'une sauce.
+Il vous faudra créer un dossier 'images' dans le dossier backend qui permettra d'enregistrer l'image d'une sauce.
 
 ## Connexion à MongoDB
 
