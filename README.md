@@ -2,13 +2,13 @@
 
 Requesting to API/Backend API REST
 
-### Application web dans laquelle les utilisateurs ajoutent leurs sauces préférées et liker ou disliker les différentes sauces proposées
+### Application web dans laquelle les utilisateurs ajoutent leurs sauces préférées et peuvent liker ou disliker les différentes sauces proposées
 
  &nbsp; 
 
 🛠️ Gérer des événements JavaScript
 
-🛠️ Interagir avec un service web (API) en JavaScript
+🛠️ Interagir avec un service web en JavaScript
 
 🛠️ Valider des données issues de sources externes
 
@@ -17,6 +17,9 @@ Requesting to API/Backend API REST
 🛠️ Sécurisation des données (bcrypt/middleware)
 
 🛠️ Création d'un serveur et ancrage à une base de données (Mongodb), avec ajout/modification/suppression de ces données (images,...)
+
+🛠️ Gestion optimale des données pour éviter un stockage trop important dans la base de données
+
 
  &nbsp; 
 
@@ -61,3 +64,12 @@ Valeurs des variables d'environnement à rajouter dans un fichier .env à créer
 TOKEN = RANDOM_TOKEN_SECRET
 
 MONGO = mongodb+srv://olivierco1:logicbobby@cluster0.5jrov.mongodb.net/Projet6?retryWrites=true&w=majority
+
+
+ &nbsp; 
+
+
+__1) Page répertoriant les sauces (Frontend d'une tierce personne) &nbsp;   &nbsp;  &nbsp;   &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;   &nbsp;   2) Page d'info d'une sauce ajoutée par l'utilisateur (Frontend d'une tierce personne)__
+
+
+<img alt="Page répertoriant les sauces" width=45% src="AllSauces.png"></img> <img alt="Page d'info d'une sauce ajoutée par l'utilisateur" width=45% src="OneSauce.png"></img>
